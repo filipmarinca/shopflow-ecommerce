@@ -1,0 +1,42 @@
+# ShopFlow E-Commerce Platform
+
+Modern full-stack e-commerce platform built with Next.js 14, TypeScript, PostgreSQL, and Stripe.
+
+## Quick Links
+
+- Live Demo: [Coming Soon]
+- GitHub: https://github.com/filipmarinca/shopflow-ecommerce
+
+## Key Features
+
+### For Customers
+- Browse products with search and filters
+- Detailed product pages with images
+- Shopping cart and checkout
+- Stripe payment integration
+- Order tracking
+- User accounts
+- Product reviews
+- Wishlist
+
+### For Admins
+- Real-time dashboard with analytics
+- Product management (CRUD)
+- Order management
+- Customer insights
+- Inventory tracking
+- Low stock alerts
+
+## Built With
+
+- Next.js 14 (App Router)
+- TypeScript
+- Tailwind CSS + shadcn/ui
+- PostgreSQL + Prisma
+- NextAuth.js
+- Stripe
+- Vercel
+
+## License
+
+MIT
