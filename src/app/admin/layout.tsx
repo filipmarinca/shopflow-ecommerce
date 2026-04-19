@@ -1,8 +1,8 @@
 import { redirect } from 'next/navigation'
 import { getServerSession } from 'next-auth'
-import { authOptions } from '@/app/api/auth/[...nextauth]/route'
+import { authOptions } from '@/lib/auth'
 import Link from 'next/link'
-import { LayoutDashboard, Package, ShoppingCart, Users, BarChart, Settings, LogOut } from 'lucide-react'
+import { LayoutDashboard, Package, ShoppingCart, Users, BarChart, LogOut } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 export default async function AdminLayout({

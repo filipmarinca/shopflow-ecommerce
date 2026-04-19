@@ -1,7 +1,5 @@
 import Link from 'next/link'
-import { ShoppingCart, Search, User, Heart } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
+import Header from '@/components/header'
 
 export default function ShopLayout({
   children,
@@ -10,50 +8,7 @@ export default function ShopLayout({
 }) {
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="border-b sticky top-0 bg-white z-50">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between gap-4">
-            <Link href="/" className="text-2xl font-bold">
-              ShopFlow
-            </Link>
-            
-            <div className="flex-1 max-w-md">
-              <div className="relative">
-                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
-                <Input
-                  type="search"
-                  placeholder="Search products..."
-                  className="pl-10"
-                />
-              </div>
-            </div>
-
-            <nav className="flex items-center gap-4">
-              <Link href="/products">
-                <Button variant="ghost">Products</Button>
-              </Link>
-              <Link href="/wishlist">
-                <Button variant="ghost" size="icon">
-                  <Heart className="h-5 w-5" />
-                </Button>
-              </Link>
-              <Link href="/cart">
-                <Button variant="ghost" size="icon" className="relative">
-                  <ShoppingCart className="h-5 w-5" />
-                  <span className="absolute -top-1 -right-1 bg-primary text-primary-foreground text-xs rounded-full h-5 w-5 flex items-center justify-center">
-                    0
-                  </span>
-                </Button>
-              </Link>
-              <Link href="/auth/signin">
-                <Button variant="ghost" size="icon">
-                  <User className="h-5 w-5" />
-                </Button>
-              </Link>
-            </nav>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       <main className="flex-1">
         {children}
